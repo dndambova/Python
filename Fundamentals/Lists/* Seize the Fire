@@ -40,6 +40,16 @@ Print the output as described above.
 
 EXAMPLES
 
+|          Input                                                  |     Output        |                       
+|                                                                 |                   |
+|High = 150#Low = 55#Medium = 86#Low = 40#High = 110#Medium = 77  |Cells:             |
+|                                                                 |- 40               |
+|                                                                 |- 110              |
+|                                                                 | Effort: 37.50     |
+|                                                                 |Total Fire:        |
+|                                                                 |150                |                       
+ _____________________________________________________________________________________
+
 SOLUTION
 
 fire = input().split("#")
