@@ -4,6 +4,17 @@ should print all the numbers that are left in the list, separated by a comma and
 
 EXAMPLE
 
+|          Input          |          Output          |
+|                         |                          |
+|10 9 8 7 6 5             |  10, 9, 8                |
+|3                        |                          |
+ ____________________________________________________
+|1 10 2 9 3 8             | 10, 9, 3, 8              |
+|2                        |                          |
+ ____________________________________________________
+
+
+
 SOLUTION
 
 numbers = list(map(int, input().split(" ")))
