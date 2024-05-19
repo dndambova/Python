@@ -12,6 +12,16 @@ Note: The length of the deck of cards will always be an even number.
 
 EXAMPLE
 
+|          Input          |          Output                                 |
+|                         |                                                 |
+|a b c d e f g h          | ['a', 'c', 'e', 'g', 'b', 'd', 'f', 'h']        |
+|5                        |                                                 |
+ ___________________________________________________________________________
+|one two three four       | ['one', 'three', 'two', 'four']                 |
+|3                                                                          |
+ ___________________________________________________________________________
+
+
 SOLUTION
 
 cards = input().split(" ")
