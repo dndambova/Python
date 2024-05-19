@@ -19,7 +19,25 @@ following format:
 
 EXAMPLE
 
+|          Input                                             |          Output                                    |
+|                                                            |                                                    |
+|Eggs StuffedAnimal Cozonac Sweets EasterBunny Eggs Clothes  |StuffedAnimal Spoon Sweets EasterBunny ChocolateEgg |
+|OutOfStock Eggs                                             |                                                    |
+|Required Spoon 2                                            |                                                    |
+|JustInCase ChocolateEgg                                     |                                                    |
+|No Money                                                    |                                                    |
+ _________________________________________________________________________________________________________________
+|Sweets Cozonac Clothes Flowers Wine Clothes Eggs Clothes    |  Sweets Cozonac Chocolate Flowers Wine Eggs Hat    |                                               |
+|Required Paper 8                                            |                                                    |
+|OutOfStock Clothes                                          |                                                    |
+|Required Chocolate 2                                        |                                                    |
+|JustInCase Hat                                              |                                                    |
+|OutOfStock Cable                                            |                                                    |
+|No Money                                                    |                                                    |
+ _________________________________________________________________________________________________________________
+
 SOLUTION
+
 gifts = input().split(" ")
 while True:
     command = input().split(" ")
