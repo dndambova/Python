@@ -36,6 +36,17 @@ o Otherwise, print: "Not enough money."
 
 EXAMPLE
 
+|          Input                                                                       |          Output              |
+|                                                                                      |                              |
+|Clothes->43.30|Shoes->25.25|Clothes->36.52|Clothes->20.90|Accessories->15.60          | 60.62 35.35 51.13            |
+|120                                                                                   | Profit: 42.03                |
+|                                                                                      | Hello, France!               |
+______________________________________________________________________________________________________________________       
+|Shoes->41.20|Clothes->20.30|Accessories->40|Shoes->15.60|Shoes->33.30|Clothes->48.60  | 28.42 21.84 46.62            |                      
+|90                                                                                    | Profit: 27.68                |
+|                                                                                      | Not enough money.            |
+ _____________________________________________________________________________________________________________________
+
 
 SOLUTION
 
@@ -58,15 +69,5 @@ if budget_after_selling >= 150:
     print(f"Hello, France!")
 else:
     print(f"Not enough money.")
-
-
-
-
-
-
-
-
-
-
 
 
