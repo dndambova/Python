@@ -1,0 +1,60 @@
+#HEADER FUNCTION
+
+def header():
+    print("                        Let's do some quick math!                ")
+
+#CALCULATOR FUNCTION
+def calculator():
+
+#INPUT DATA
+
+    operator = input('Enter one of the following operators - multiply, divide, add, subtract, power :')
+    if operator != "multiply" and operator != "add" and operator != "divide" and operator != "subtract" and operator != "power":
+        print("Wrong operator! Please try again!")
+        return calculator()
+    number1 = input('Enter the first number: ')
+    if not number1.isdigit():
+        print("Invalid input, please enter a correct input data!")
+        return calculator()
+    number2 = input('Enter the second number: ')
+    if not number2.isdigit():
+        print("Invalid input, please enter a correct input data!")
+        return calculator()
+
+# OPERATIONS
+
+    if operator == "multiply":
+        return format(float(number1) * float(number2), ".2f")
+    elif operator == "divide":
+        if number2 != 0:
+            return format(float(number1)/float(number2), ".2f")
+        else:
+            print("Change your input! You can't divide by zero!")
+            return calculator()
+    elif operator == "add":
+        return format(float(number1) + float(number2), ".2f")
+    elif operator == "subtract":
+        return format(float(number1) - float(number2), ".2f")
+    elif operator == "power":
+        return format(float(number1) ** float(number2), ".2f")
+
+
+#FUNCTION THAT REPEATS THE CALCULATOR FUNCTION
+
+def again():
+
+    calculate_again = input('Do you want to calculate again? Please, enter YES or NO: ')
+    if calculate_again == "YES":
+        print('The result is formatted to the second decimal point: ', calculator())
+    elif calculate_again == "NO":
+        print('Okay! Have a nice day!')
+        exit()
+    else:
+        again()
+
+
+header()
+print('The result is formatted to the second decimal point: ', calculator())
+while True:
+    again()
+
